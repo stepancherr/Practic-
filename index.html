@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ростов-на-Дону — Официальный туристический сайт</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header + Hero -->
+  <header class="header">
+    <div class="header__inner container">
+      <a href="#" class="logo">
+        <img src="assets/logo.png" alt="Ростов-на-Дону" class="logo__img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <span class="logo__icon" style="display:none;">РНД</span>
+      </a>
+      <nav class="nav">
+        <a href="#about" class="nav__link">О городе</a>
+        <a href="#landmarks" class="nav__link">Достопримечательности</a>
+        <a href="#tours" class="nav__link">Туры</a>
+        <a href="#map" class="nav__link">Карты</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero__slides" aria-hidden="true">
+      <div class="hero__slide is-active" data-slide="0" style="background-image: url('assets/head.png');"></div>
+      <div class="hero__slide" data-slide="1" style="background-image: url('assets/head2.png');"></div>
+      <div class="hero__slide" data-slide="2" style="background-image: url('assets/head3.png');"></div>
+      <div class="hero__slide" data-slide="3" style="background-image: url('assets/head4.png');"></div>
+    </div>
+    <div class="hero__content">
+      <h1 class="hero__title">РОСТОВ-НА-ДОНУ</h1>
+      <p class="hero__descriptor">Показываем город, который не найти в путеводителях</p>
+      <div class="hero__actions">
+        <a href="#tours" class="btn btn--primary btn--hero-main">Все туры</a>
+        <div class="hero__dots" role="tablist" aria-label="Выбор фонового изображения">
+          <button type="button" class="hero__dot is-active" data-slide="0" aria-label="Слайд 1"></button>
+          <button type="button" class="hero__dot" data-slide="1" aria-label="Слайд 2"></button>
+          <button type="button" class="hero__dot" data-slide="2" aria-label="Слайд 3"></button>
+          <button type="button" class="hero__dot" data-slide="3" aria-label="Слайд 4"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="hero-sep">
+
+  <!-- 1. О городе -->
+  <section id="about" class="section section--brown">
+    <div class="container">
+      <h2 class="section__title section__title--dark">О городе</h2>
+      <div class="about-grid">
+        <div class="about-grid__img-wrap">
+          <img src="assets\loverostov.png" alt="Ростов-на-Дону" class="about-grid__img" onerror="this.style.background='linear-gradient(135deg,#8b7355,#C19566)'">
+        </div>
+        <div class="about-grid__content">
+          <h3 class="about-grid__headline">Добро пожаловать в Ростов-на-Дону</h3>
+          <p class="about-grid__text">Ростов-на-Дону — один из крупнейших городов Юга России, административный центр Ростовской области. Город расположен на берегу реки Дон, в 46 км от её впадения в Азовское море.</p>
+          <p class="about-grid__text">Ростов-на-Дону называют «воротами Кавказа» и «южной столицей России». Это крупный культурный, образовательный и промышленный центр с богатой историей и уникальной атмосферой.</p>
+          <a href="#tours" class="btn btn--primary">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-sep">
+
+  <!-- 2. Все туры -->
+  <section id="tours" class="section section--dark">
+    <div class="container">
+      <h2 class="section__title section__title--gold">ВСЕ ТУРЫ</h2>
+      <div class="places-grid">
+        <article class="place-card">
+          <div class="place-card__img-wrap">
+            <img src="assets/street.png" alt="Южная столица" class="place-card__img" onerror="this.style.background='#4a4a4a'">
+          </div>
+          <div class="place-card__body">
+            <h3 class="place-card__title place-card__title--gold">ТУР «ЮЖНАЯ СТОЛИЦА: От КУПЕЧЕСКОГО ШИКА ДО СТРИТ-ФУДА»</h3>
+            <div class="place-card__icons place-card__icons--bar">
+              <img src="assets\icons\walk-outline.png" alt="" class="place-card__icon-img" width="28" height="28">
+              <img src="assets\icons\ship.png" alt="" class="place-card__icon-img" width="28" height="28">
+              <img src="assets\icons\ic_map_48px.png" alt="" class="place-card__icon-img" width="28" height="28">
+            </div>
+            <a href="#tour-south-capital" class="btn btn--primary btn--sm">СМОТРЕТЬ ТУР</a>
+          </div>
+        </article>
+        <article class="place-card">
+          <div class="place-card__img-wrap">
+            <img src="assets/dvoriki.png" alt="Ростовские дворики" class="place-card__img" onerror="this.style.background='#4a4a4a'">
+          </div>
+          <div class="place-card__body">
+            <h3 class="place-card__title place-card__title--gold">ТУР «РОСТОВСКИЕ ДВОРИКИ И ТАЙНЫ СТАРОГО ГОРОДА»</h3>
+            <div class="place-card__icons place-card__icons--bar">
+              <img src="assets\icons\walk-outline.png" alt="" class="place-card__icon-img" width="28" height="28">
+              <img src="assets\icons\coffee.png" alt="" class="place-card__icon-img" width="28" height="28">
+              <img src="assets\icons\bank-line.png" alt="" class="place-card__icon-img" width="28" height="28">
+            </div>
+            <a href="#tour-yards" class="btn btn--primary btn--sm">СМОТРЕТЬ ТУР</a>
+          </div>
+        </article>
+        <article class="place-card">
+          <div class="place-card__img-wrap">
+            <img src="assets/raki.png" alt="Гастро-Ростов" class="place-card__img" onerror="this.style.background='#4a4a4a'">
+          </div>
+          <div class="place-card__body">
+            <h3 class="place-card__title place-card__title--gold">ТУР «ГАСТРО-РОСТОВ: РАКИ, ВИНО И ЛЕВЫЙ БЕРЕГ»</h3>
+            <div class="place-card__icons place-card__icons--bar">
+              <img src="assets\icons\walk-outline.png" alt="" class="place-card__icon-img" width="28" height="28">
+              <img src="assets\icons\wine.png" alt="" class="place-card__icon-img" width="28" height="28">
+              <img src="assets\icons\crab.png" alt="" class="place-card__icon-img" width="28" height="28">
+            </div>
+            <a href="#tour-gastro" class="btn btn--primary btn--sm">СМОТРЕТЬ ТУР</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Описания туров -->
+      <div class="tour-details">
+        <article class="tour-detail" id="tour-south-capital">
+          <h2 class="tour-detail__title">Тур «Южная столица: От купеческого шика до стрит-фуда»</h2>
+          <div class="tour-detail__grid">
+            <div class="tour-detail__img-wrap">
+              <img src="assets/building-night.png" alt="Южная столица" class="tour-detail__img" onerror="this.style.background='#4a4a4a'">
+            </div>
+            <div class="tour-detail__body">
+              <p class="tour-detail__desc">Погружение в живую атмосферу Ростова. Мы пройдём по парадной Большой Садовой, увидим знаменитые мозаики в подземных переходах и заглянем в шумное чрево Центрального рынка (Старого базара), чтобы научиться выбирать правильную рыбу. Завершим прогулку на набережной Дона с видом на левый берег.</p>
+              <p class="tour-detail__price"><strong>Цена: 4500 руб.</strong> В стоимость входит: услуги гида, дегустационный сет на рынке, билет на теплоход, транспорт, раздаточный материал.</p>
+              <a href="#request" class="btn btn--primary">ОСТАВИТЬ ЗАЯВКУ</a>
+            </div>
+          </div>
+        </article>
+        <hr class="tour-detail__sep">
+        <article class="tour-detail" id="tour-yards">
+          <h2 class="tour-detail__title">Тур «Ростовские дворики и тайны старого города»</h2>
+          <div class="tour-detail__grid">
+            <div class="tour-detail__img-wrap">
+              <img src="assets/street.png" alt="Ростовские дворики" class="tour-detail__img" onerror="this.style.background='#4a4a4a'">
+            </div>
+            <div class="tour-detail__body">
+              <p class="tour-detail__desc">Прогулка по скрытым от туристов уголкам исторического центра. Узкие переулки, старинные купеческие особняки, дворики с колодцами и виноградниками. Истории о ростовских купцах, легенды и быль. Заглянем в действующие мастерские и узнаем, чем живёт старый город сегодня.</p>
+              <p class="tour-detail__price"><strong>Цена: 3500 руб.</strong> В стоимость входит: услуги гида, посещение двориков и одной мастерской, раздаточный материал.</p>
+              <a href="#request" class="btn btn--primary">ОСТАВИТЬ ЗАЯВКУ</a>
+            </div>
+          </div>
+        </article>
+        <hr class="tour-detail__sep">
+        <article class="tour-detail" id="tour-gastro">
+          <h2 class="tour-detail__title">Тур «Гастро-Ростов: Раки, вино и левый берег»</h2>
+          <div class="tour-detail__grid">
+            <div class="tour-detail__img-wrap">
+              <img src="assets/raki.png" alt="Гастро-Ростов" class="tour-detail__img" onerror="this.style.background='#4a4a4a'">
+            </div>
+            <div class="tour-detail__body">
+              <p class="tour-detail__desc">Гастрономическое путешествие по Дону: от набережной до левого берега. Учимся варить и есть раков по-ростовски, дегустируем местное вино и закуски. Прогулка на катере, рассказы о рыбных местах и донской кухне. Идеально для тех, кто любит совмещать красоты природы с вкусным столом.</p>
+              <p class="tour-detail__price"><strong>Цена: 5500 руб.</strong> В стоимость входит: услуги гида, дегустация раков и вина, прогулка на катере, трансфер до пристани и обратно.</p>
+              <a href="#request" class="btn btn--primary">ОСТАВИТЬ ЗАЯВКУ</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-sep">
+
+  <!-- 3. Оставить заявку на тур -->
+  <section id="request" class="section section--dark">
+    <div class="container">
+      <div class="form-card form-card--tour">
+        <h2 class="form-card__title form-card__title--caps">ОСТАВЬТЕ ЗАЯВКУ НА ТУР</h2>
+        <form class="form form--tour" action="#" method="post">
+          <input type="tel" class="form__input" placeholder="ВАШ НОМЕР" required>
+          <input type="email" class="form__input" placeholder="ВАША ПОЧТА" required>
+          <label class="form__checkbox-wrap">
+            <input type="checkbox" class="form__checkbox" required>
+            <span>Вы соглашаетесь с политикой конфиденциальности и на обработку персональных данных</span>
+          </label>
+          <button type="submit" class="btn btn--primary">ОТПРАВИТЬ ЗАЯВКУ</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-sep">
+
+  <!-- 4. Достопримечательности -->
+  <section id="landmarks" class="section section--dark">
+    <div class="container">
+      <h2 class="section__title section__title--center">ДОСТОПРИМЕЧАТЕЛЬНОСТИ</h2>
+      <div class="landmark-slider">
+        <div class="landmark-block" data-landmark="0">
+          <div class="landmark-block__content">
+            <h3 class="landmark-block__title">Парамоновские склады</h3>
+            <p class="landmark-block__subtitle">Природно-архитектурный феномен и сердце старого порта</p>
+            <p class="landmark-block__text">Парамоны — это самая загадочная достопримечательность города. Построенные в XIX веке для хранения зерна, склады стали шедевром инженерной мысли. Купцы использовали ледяную родниковую воду, которая текла с холмов, для естественного охлаждения помещений — вода бежала по жёлобам внутри стен, поддерживая идеальный климат для зерна.</p>
+            <p class="landmark-block__text"><strong>Магия руин:</strong> Сегодня это живописные кирпичные остовы без крыш, внутри которых бьют чистейшие ключи. Красный кирпич в сочетании с изумрудной травой и прозрачной водой создаёт атмосферу заброшенного храма или съёмочной площадки фэнтези.</p>
+            <p class="landmark-block__text"><strong>Природный «джакузи»:</strong> Долгое время склады были популярны как «народный бассейн» под открытым небом. Сейчас купание ограничено из‑за статуса объекта, но это по‑прежнему лучшее место для атмосферных фотосессий.</p>
+            <p class="landmark-block__text"><strong>Дух истории:</strong> Склады напоминают о временах, когда Ростов был крупнейшим портом страны и «русским Чикаго».</p>
+            <div class="landmark-block__nav">
+              <button type="button" class="landmark-block__arrow landmark-block__arrow--prev" aria-label="Предыдущая достопримечательность">‹</button>
+              <button type="button" class="landmark-block__arrow landmark-block__arrow--next" aria-label="Следующая достопримечательность">›</button>
+            </div>
+          </div>
+          <div class="landmark-block__img-wrap">
+            <img src="assets/info/paramonovskie-sklady.png" alt="Парамоновские склады" class="landmark-block__img" onerror="this.style.background='#4a4a4a'">
+          </div>
+        </div>
+
+        <div class="landmark-block is-hidden" data-landmark="1">
+          <div class="landmark-block__content">
+            <h3 class="landmark-block__title">Набережная реки Дон (Береговая улица)</h3>
+            <p class="landmark-block__subtitle">Набережная реки Дон (Береговая улица)</p>
+            <p class="landmark-block__text">Набережная имени Адмирала Ушакова — это место, где Ростов встречается с Доном. Здесь особенно чувствуется южный колорит: крики чаек, гудки теплоходов и ароматы свежезаваренного кофе. Протянувшись на несколько километров, набережная разделена на тихие зоны для созерцания и оживлённые площадки с аттракционами и ресторанами.</p>
+            <p class="landmark-block__text"><strong>Галерея характеров:</strong> Вдоль берега «рассыпаны» бронзовые скульптуры. Вы встретите сурового «Батюшку-Дона», прекрасную «Росточку» и героев шалых ростовских историй — Григория и Аксинью в лодке.</p>
+            <p class="landmark-block__text"><strong>Речные прогулки:</strong> С причалов каждые 30 минут отходят теплоходы. Прогулка по воде позволяет увидеть город с того самого ракурса, с которого его видели купцы прошлых веков.</p>
+            <p class="landmark-block__text"><strong>Световое шоу:</strong> Вечером здесь зажигается иллюминация, а сухой фонтан «Петровский» устраивает танцы воды под музыку.</p>
+            <div class="landmark-block__nav">
+              <button type="button" class="landmark-block__arrow landmark-block__arrow--prev" aria-label="Предыдущая достопримечательность">‹</button>
+              <button type="button" class="landmark-block__arrow landmark-block__arrow--next" aria-label="Следующая достопримечательность">›</button>
+            </div>
+          </div>
+          <div class="landmark-block__img-wrap">
+            <img src="assets/info/naberezhnaya-don.png" alt="Набережная Дона" class="landmark-block__img" onerror="this.style.background='#4a4a4a'">
+          </div>
+        </div>
+
+        <div class="landmark-block is-hidden" data-landmark="2">
+          <div class="landmark-block__content">
+            <h3 class="landmark-block__title">Пушкинская улица</h3>
+            <p class="landmark-block__subtitle">Зелёный бульвар и культурный подиум города</p>
+            <p class="landmark-block__text">Пушкинская — это главная пешеходная артерия Ростова, которую часто называют «гостиной под открытым небом». В отличие от шумной Большой Садовой, здесь царит атмосфера спокойствия, творчества и интеллигентности. Бульвар тянется через весь центр, меняя свой облик от тихих аллей до оживлённых площадок с уличными музыкантами.</p>
+            <p class="landmark-block__text"><strong>Музей архитектуры:</strong> Прогуливаясь по Пушкинской, можно изучать историю города по фасадам: от изящных особняков в стиле барокко до брутальной архитектуры Пушкинской библиотеки, чьи внутренние зимние сады обязательны к посещению.</p>
+            <p class="landmark-block__text"><strong>Пушкинские шары:</strong> Знаменитые кованые сферы, внутри которых «оживают» сцены из жизни поэта и его сказок. Это любимая точка для встреч и фотосессий.</p>
+            <p class="landmark-block__text"><strong>Атмосфера:</strong> Здесь лучшие кофейни в городе, книжные развалы, памятники героям и тенистые каштаны, которые создают спасительную прохладу даже в самый жаркий ростовский полдень.</p>
+            <div class="landmark-block__nav">
+              <button type="button" class="landmark-block__arrow landmark-block__arrow--prev" aria-label="Предыдущая достопримечательность">‹</button>
+              <button type="button" class="landmark-block__arrow landmark-block__arrow--next" aria-label="Следующая достопримечательность">›</button>
+            </div>
+          </div>
+          <div class="landmark-block__img-wrap">
+            <img src="assets/info/pushkinskaya-ulitsa.png" alt="Пушкинская улица" class="landmark-block__img" onerror="this.style.background='#4a4a4a'">
+          </div>
+        </div>
+
+        <div class="landmark-block is-hidden" data-landmark="3">
+          <div class="landmark-block__content">
+            <h3 class="landmark-block__title">Улица Большая Садовая</h3>
+            <p class="landmark-block__subtitle">Главная сцена ростовской жизни</p>
+            <p class="landmark-block__text">Большая Садовая — это парадный фасад Ростова-на-Дону и его главная историческая ось. Улица‑музей под открытым небом, где южный модерн встречается с советским ампиром, а тенистые каштановые аллеи ведут к уютным кофейням и паркам. Прогулка по ней — самый быстрый способ влюбиться в город и почувствовать его неповторимый купеческий размах.</p>
+            <p class="landmark-block__why">Почему стоит посетить:</p>
+            <dl class="landmark-block__list">
+              <dt>Архитектурные шедевры:</dt>
+              <dd>Здание Городской думы и кружевной особняк Маргариты Черновой.</dd>
+              <dt>Культурный код:</dt>
+              <dd>Знаменитые мозаичные панно в подземных переходах, не имеющие аналогов.</dd>
+              <dt>Зелёный маршрут:</dt>
+              <dd>Улица соединяет два главных парка города — им. М. Горького и им. Октябрьской Революции.</dd>
+            </dl>
+            <div class="landmark-block__nav">
+              <button type="button" class="landmark-block__arrow landmark-block__arrow--prev" aria-label="Предыдущая достопримечательность">‹</button>
+              <button type="button" class="landmark-block__arrow landmark-block__arrow--next" aria-label="Следующая достопримечательность">›</button>
+            </div>
+          </div>
+          <div class="landmark-block__img-wrap">
+            <img src="assets\info\bolshya-sadovaya.png" alt="Улица Большая Садовая" class="landmark-block__img" onerror="this.style.background='#4a4a4a'">
+          </div>
+        </div>
+
+        <div class="landmark-block is-hidden" data-landmark="4">
+          <div class="landmark-block__content">
+            <h3 class="landmark-block__title">Театральная площадь</h3>
+            <p class="landmark-block__subtitle">Главная сцена и архитектурный символ города</p>
+            <p class="landmark-block__text">Это сердце Ростова, где чувствуется мощь и размах Южной столицы. Площадь является связующим звеном между Ростовом и историческим районом Нахичевань-на-Дону. Её масштаб поражает, а архитектурные решения известны далеко за пределами России.</p>
+            <p class="landmark-block__text"><strong>Театр‑трактор:</strong> Главная гордость площади — Театр драмы имени М. Горького. Это шедевр мирового конструктивизма, построенный в форме гигантского трактора. Недаром включён в список ЮНЕСКО как один из самых выдающихся памятников архитектуры XX века.</p>
+            <p class="landmark-block__text"><strong>Стела «Освободителям Ростова»:</strong> 72‑метровый монумент, увенчанный золотой фигурой богини Ники. Величественное сооружение, которое видно из многих точек города.</p>
+            <p class="landmark-block__text"><strong>Колесо обозрения «Одно небо»:</strong> Одно из самых высоких в стране. Его кабины открывают захватывающий вид: с одной стороны — живописные донские косы и Левый берег, с другой — хрестоматийные городские улицы.</p>
+            <p class="landmark-block__text"><strong>Фонтанный комплекс:</strong> На площади расположен один из самых красивых городских фонтанов с скульптурной группой атлантов, созданной знаменитым Евгением Вучетичем.</p>
+            <div class="landmark-block__nav">
+              <button type="button" class="landmark-block__arrow landmark-block__arrow--prev" aria-label="Предыдущая достопримечательность">‹</button>
+              <button type="button" class="landmark-block__arrow landmark-block__arrow--next" aria-label="Следующая достопримечательность">›</button>
+            </div>
+          </div>
+          <div class="landmark-block__img-wrap">
+            <img src="assets/info/teatralnaya-ploshchad.png" alt="Театральная площадь" class="landmark-block__img" onerror="this.style.background='#4a4a4a'">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-sep">
+
+  <!-- 5. Карта -->
+  <section id="map" class="section section--dark">
+    <div class="container">
+      <h2 class="section__title section__title--center">Карта</h2>
+      <div class="map-wrap">
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=39.68%2C47.21%2C39.78%2C47.26&layer=mapnik&marker=47.2357%2C39.7139"
+          class="map-iframe"
+          loading="lazy"
+          title="Карта Ростова-на-Дону">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-sep">
+
+  <!-- 6. Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__row">
+          <div class="footer__col footer__col--left">
+            <h4 class="footer__heading">Права</h4>
+            <ul class="footer__links footer__links--column">
+              <li><a href="#">Политика конфиденциальности</a></li>
+              <li><a href="#">Условия обслуживания</a></li>
+              <li><a href="#">Политика использования файлов cookie</a></li>
+              <li><a href="#">Возврат и обмен товара</a></li>
+            </ul>
+            <p class="footer__brand-text">"НаДону"<br>Туристический сайт о городе<br>Ростов-на-Дону</p>
+          </div>
+
+          <div class="footer__col footer__col--center">
+            <h4 class="footer__heading">Навигация</h4>
+            <ul class="footer__links footer__links--column">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#about">О городе</a></li>
+              <li><a href="#landmarks">Достопримечательности</a></li>
+              <li><a href="#tours">Туры</a></li>
+            </ul>
+            <div class="footer__emblem">
+              <span class="footer__emblem-circle">
+                <img src="assets/logo.png" alt="Ростов-на-Дону" class="footer__emblem-img">
+              </span>
+            </div>
+          </div>
+
+          <div class="footer__col footer__col--right">
+            <h4 class="footer__heading">Контакты</h4>
+            <p class="footer__text footer__text--contacts">
+              Тел: +7-888-888-88-88<br>
+              Email: example@mail.ru<br>
+              Тел. поддержки: +7-888-888-88-88
+            </p>
+            <div class="footer__social-block">
+              <p class="footer__social-title">Мы в соц сетях</p>
+              <div class="footer__socials">
+                <a href="#" class="footer__social footer__social--round" aria-label="Telegram">
+                  <img src="assets/iconic/telegram.png" alt="Telegram" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social footer__social--round" aria-label="WhatsApp">
+                  <img src="assets/iconic/whatsapp.png" alt="WhatsApp" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social footer__social--round" aria-label="ВКонтакте">
+                  <img src="assets/iconic/vk.png" alt="ВКонтакте" class="footer__social-icon">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="footer__copy footer__copy--bottom">2026 Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
